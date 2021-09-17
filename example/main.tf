@@ -22,10 +22,5 @@ module "azure_cdn" {
   environment_name        = "test"
   project_name            = local.application_full_name
   resource_group_name     = module.azure_ressource_group.name
-
-  # azure_location          = local.azure_location
-  # application_full_name   = local.application_full_name
-  # application_short_name  = local.application_short_name
-  # application_environment = local.application_environment
-  # storage_container_name  = ["images","files"]
+  origin_host_name        = ""
 }

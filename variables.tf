@@ -38,3 +38,8 @@ variable "sku" {
     error_message = "Valid SKU name are Standard or Premium."
   }
 }
+
+variable "origin_host_name" {
+  type        = string
+  description = "A string that determines the hostname/IP address of the origin serve."
+}
